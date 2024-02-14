@@ -16,7 +16,7 @@ Includes:
 - [Ava](https://www.npmjs.com/package/ava), for writing good tests
 - [Commander](https://www.npmjs.com/package/commander), for building CLI applications
 
-Your application will be installable from `npm` or by sharing your native executables.
+Your application will be installable from `npm`.
 
 ## Usage
 
