@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "A simple and zero-opinion typescript starter template for building cross-platform command line applications.",
-  "author": "Khalid Zoabi <kzoabi@outlook.com>",
+  "author": "Yuchen Wang <contact@wangyuchen.cn>",
   "keywords": [
     "typescript",
     "cli",
@@ -11,7 +11,9 @@
   ],
   "license": "MIT",
   "main": "./dist/index.js",
-  "bin": "./dist/cli.js",
+  "bin": {
+    "orderPizza": "./dist/cli.js"
+  },
   "files": [
     "dist/**/*",
     "!dist/**/*.test.js"
@@ -19,18 +21,17 @@
   "scripts": {
     "dev": "ts-node ./src/cli.ts",
     "clean": "rimraf ./dist/ ./exec/",
-    "build": "npm run clean && tsc",
-    "test": "npm run build && ava --verbose",
-    "bundle": "npm run build && pkg . --out-dir ./exec/"
+    "build": "pnpm run clean && tsc",
+    "test": "pnpm run build && ava --verbose"
   },
   "devDependencies": {
-    "ava": "^2.2.0",
-    "pkg": "^4.4.0",
-    "rimraf": "^2.6.3",
-    "ts-node": "^8.3.0",
-    "typescript": "^3.5.3"
+    "@types/node": "^20.11.17",
+    "ava": "^6.1.1",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
-    "commander": "^2.20.0"
+    "commander": "^12.0.0"
   }
 }

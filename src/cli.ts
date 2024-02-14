@@ -1,11 +1,13 @@
 #!/usr/bin/env node
-
-import program from 'commander'
+import { Command } from 'commander';
 
 import { orderPizza } from './index'
- 
+
+const program = new Command();
+
 program
-  .version('0.1.0')
+  .name("orderPizza")
+  .version('1.0.0')
   .option('-p, --peppers', 'Add peppers')
   .option('-P, --pineapple', 'Add pineapple')
   .option('-b, --bbq-sauce', 'Add bbq sauce')
@@ -13,8 +15,8 @@ program
   .parse(process.argv)
 
 orderPizza({
-  peppers: program.peppers,
-  pineapple: program.pineapple,
-  bbqSauce: program.bbqSauce,
-  cheeseType: program.cheese
+  peppers: program.opts().peppers,
+  pineapple: program.opts().pineapple,
+  bbqSauce: program.opts().bbqSauce,
+  cheeseType: program.opts().cheese
 }).then(result => console.log(result.message))
