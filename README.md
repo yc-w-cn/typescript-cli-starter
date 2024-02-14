@@ -2,13 +2,13 @@
 
 A simple and zero-opinion typescript starter template for building cross-platform command line applications.
 
-![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/khalidx/typescript-cli-starter.svg?style=flat-square)
+![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/yc-w-cn/typescript-cli-starter.svg?style=flat-square)
 
-![GitHub](https://img.shields.io/github/license/khalidx/typescript-cli-starter.svg?style=flat-square)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/khalidx/typescript-cli-starter.svg?style=flat-square)
-![GitHub top language](https://img.shields.io/github/languages/top/khalidx/typescript-cli-starter.svg?style=flat-square)
+![GitHub](https://img.shields.io/github/license/yc-w-cn/typescript-cli-starter.svg?style=flat-square)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/yc-w-cn/typescript-cli-starter.svg?style=flat-square)
+![GitHub top language](https://img.shields.io/github/languages/top/yc-w-cn/typescript-cli-starter.svg?style=flat-square)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/khalidx/typescript-cli-starter.svg?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/yc-w-cn/typescript-cli-starter.svg?style=flat-square)
 
 Includes:
 
